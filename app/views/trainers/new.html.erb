@@ -1,0 +1,37 @@
+<% provide(:title, 'New Trainer') %>
+<h1>Create new trainer</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@trainer) do |f| %>
+    	<%= render 'shared/error_messages' %>
+
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control' %>
+
+      <%= f.label :age %>
+      <%= f.text_field :age , class: 'form-control' %>
+
+      <%= f.label :height %>
+      <%= f.text_field :height , class: 'form-control' %>
+
+      <%= f.label :weight %>
+      <%= f.text_field :weight , class: 'form-control' %>
+
+      <%= f.label :level %>
+      <%= f.text_field :level , class: 'form-control' %>
+
+      <%= f.label :address %>
+      <%= f.text_field :address , class: 'form-control' %>
+
+      <%= f.label :email %>
+      <%= f.email_field :email , class: 'form-control' %>
+
+      
+
+      
+
+      <%= f.submit "Create new trainer", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

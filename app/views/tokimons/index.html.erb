@@ -1,0 +1,42 @@
+
+<% provide(:title, "Index_tokimon") %>
+
+<h1>The list of Tokimons</h1>
+
+<table>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Height</th>
+		<th>Weight</th>
+		<th>Fly</th>
+		<th>Fight</th>
+		<th>Fire</th>
+		<th>water</th>
+		<th>electric</th>
+		<th>frozon</th>
+		<th colspan="7"></th>
+	</tr>
+	</thead>
+
+	<tbody>
+	<% @tokimons.each do |tokimon| %>
+	<tr>
+		<td><%= tokimon.name %></td>
+		<td><%= tokimon.height %></td>
+		<td><%= tokimon.weight %></td>
+		<td><%= tokimon.fly %></td>
+		<td><%= tokimon.fight %></td>
+		<td><%= tokimon.fire %></td>
+		<td><%= tokimon.water %></td>
+		<td><%= tokimon.electric %></td>
+		<td><%= tokimon.frozon %></td>
+	</tr> 
+	<% end %>
+	</tbody>
+</table>
+
+<br>
+
+<%= link_to "create new tokimon!", new_tokimon_path, class: "btn btn-lg btn-primary" %>
+

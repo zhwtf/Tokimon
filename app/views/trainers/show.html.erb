@@ -1,0 +1,48 @@
+<h1>The trainer's Profile</h1>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+<strong>Name: </strong>
+<%= @trainer.name %>
+	
+</p>
+
+<p>
+<strong>age: </strong>
+<%= @trainer.age %>
+	
+</p>
+
+<p>
+<strong>Height: </strong>
+<%= @trainer.height %>
+	
+</p>
+
+<p>
+<strong>Weight: </strong>
+<%= @trainer.weight %>
+	
+</p>
+
+<p>
+<strong>Level: </strong>
+<%= @trainer.level %>
+	
+</p>
+
+<p>
+<strong>Address: </strong>
+<%= @trainer.address %>
+	
+</p>
+
+<p>
+<strong>Email: </strong>
+<%= @trainer.email %>
+	
+</p>
+
+<%= link_to 'Edit', edit_trainer_path(@trainer) %> |
+<%= link_to 'Back', trainers_path %>

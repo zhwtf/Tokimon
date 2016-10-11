@@ -1,0 +1,40 @@
+<% provide(:title, "Index") %>
+
+<h1>The list of trainers</h1>
+
+<table>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Age</th>
+		<th>Height</th>
+		<th>Weight</th>
+		<th>Level</th>
+		<th>Address</th>
+		<th>Email</th>
+		<th colspan="7"></th>
+	</tr>
+	</thead>
+
+	<tbody>
+	<% @trainers.each do |trainer| %>
+	<tr>
+		<td><%= trainer.name %></td>
+		<td><%= trainer.age %></td>
+		<td><%= trainer.height %></td>
+		<td><%= trainer.weight %></td>
+		<td><%= trainer.level %></td>
+		<td><%= trainer.address %></td>
+		<td><%= trainer.email %></td>
+		<td><%= link_to "Profile", trainer %></td>
+		<td><%= link_to "Delete", trainer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	</tr> 
+	<% end %>
+	</tbody>
+</table>
+
+<br>
+
+<%= link_to "create new trainer!", new_trainer_path, class: "btn btn-lg btn-primary" %>
+
+
