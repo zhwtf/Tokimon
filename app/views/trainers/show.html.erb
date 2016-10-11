@@ -44,5 +44,16 @@
 	
 </p>
 
+<div class="col-md-8">
+ 
+    <% if @trainer.tokimons.any? %>
+      <h3>tokimons (<%= @trainer.tokimons.count %>)</h3>
+      <ol class="tokimons">
+        <%= render 'tokimons/tokimon' %>
+      </ol>
+      
+    <% end %>
+  </div>
+
 <%= link_to 'Edit', edit_trainer_path(@trainer) %> |
 <%= link_to 'Back', trainers_path %>

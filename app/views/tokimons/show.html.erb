@@ -1,3 +1,63 @@
-<% provide(:title, "Show") %>
-<h1>Tokemons#show</h1>
-<p>Find me in app/views/tokemons/show.html.erb</p>
+<% provide(:title, "Show-Tokimon") %>
+<h1>The Tokemon's profile</h1>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+<strong>Name: </strong>
+<%= @tokimon.name %>
+	
+</p>
+
+
+<p>
+<strong>Height: </strong>
+<%= @tokimon.height %>
+	
+</p>
+
+<p>
+<strong>Weight: </strong>
+<%= @tokimon.weight %>
+	
+</p>
+
+<p>
+<strong>Fly: </strong>
+<%= @tokimon.fly %>
+	
+</p>
+
+<p>
+<strong>Fight: </strong>
+<%= @tokimon.fight %>
+	
+</p>
+
+<p>
+<strong>Fire: </strong>
+<%= @tokimon.fire %>
+	
+</p>
+
+<p>
+<strong>Water: </strong>
+<%= @tokimon.water %>
+	
+</p>
+
+<p>
+<strong>Electric: </strong>
+<%= @tokimon.electric %>
+	
+</p>
+
+<p>
+<strong>Frozon: </strong>
+<%= @tokimon.frozon %>
+	
+</p>
+
+<%= link_to 'Edit', edit_tokimon_path(@tokimon) %> |
+<%= link_to 'Back', tokimons_path %>
+

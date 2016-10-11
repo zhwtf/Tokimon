@@ -3,7 +3,7 @@
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <%= form_for(@tokimon, url: signup_path) do |f| %>
+    <%= form_for(@tokimon) do |f| %>
     	
       <%= f.label :name %>
       <%= f.text_field :name, class: 'form-control' %>
@@ -32,6 +32,8 @@
       <%= f.label :frozon %>
       <%= f.text_field :frozon , class: 'form-control' %>
 
+      <%= f.label :trainer_id %>
+      <%= f.text_field :trainer_id , class: 'form-control' %>
       
 
       
