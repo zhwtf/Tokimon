@@ -7,7 +7,7 @@ class Trainer < ApplicationRecord
 	validates :age, presence: true, :numericality => { :greater_than_or_equal_to => 0, :less_than_or_equal_to => 100 }
 	validates :height, presence: true, length: { maximum: 20 }
 	validates :weight, presence: true, length: { maximum: 20 }
-	validates :level, presence: true, :numericality => { :greater_than_or_equal_to => 0 }
+	
 	validates :address, presence: true, length: { maximum: 100 }
 
 

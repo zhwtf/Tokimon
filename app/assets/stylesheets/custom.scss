@@ -5,6 +5,7 @@
 
 body {
   padding-top: 60px;
+  background:rgb(254, 249, 231);
 }
 
 section {
@@ -36,4 +37,29 @@ textarea {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+table, tr, td {
+	border:2px solid;
+	border-color: rgb(204,208,211);
+	border-collapse: collapse;
+	table-layout: fixed;
+
+}
+
+th {
+	text-align: left;
+	border:2px solid;
+	border-color: rgb(204,208,211);
+	background-color: rgb(203, 210, 208);
+	font-family: "Times New Roman", Times, serif;
+	padding: 5px;
+	width: 100px;
+	}
+
+td{
+	font-weight: normal;
+	text-align: center;
+	width: 100px;
+	background:rgb(250, 215, 160);
 }

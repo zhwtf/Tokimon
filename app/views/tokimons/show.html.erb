@@ -1,4 +1,5 @@
 <% provide(:title, "Show-Tokimon") %>
+<div class="col-md-6 col-md-offset-3">
 <h1>The Tokemon's profile</h1>
 
 <p id="notice"><%= notice %></p>
@@ -64,6 +65,7 @@
 	
 </p>
 
-<%= link_to 'Edit', edit_tokimon_path(@tokimon) %> 
-<%= link_to 'Back', tokimons_path %>
-
+<%= link_to 'Edit', edit_tokimon_path(@tokimon) %>  | 
+<%= link_to 'Back to the list', tokimons_path %> |
+<%= link_to 'Back to its trainer', @trainer %>
+</div>

@@ -2,6 +2,7 @@
 
 <p id="notice"><%= notice %></p>
 
+<table align="center">
 <p>
 <strong>Name: </strong>
 <%= @trainer.name %>
@@ -28,7 +29,7 @@
 
 <p>
 <strong>Level: </strong>
-<%= @trainer.level %>
+<%= @trainer.level = @count %>
 	
 </p>
 
@@ -44,11 +45,6 @@
 	
 </p>
 
-<p>
-<strong>Level: </strong>
-<%= @trainer.level = @count %>
-	
-</p>
 
 <%= link_to 'Edit', edit_trainer_path(@trainer) %> |
 <%= link_to 'Back', trainers_path %> |

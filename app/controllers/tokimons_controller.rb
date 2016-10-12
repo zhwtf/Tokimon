@@ -5,6 +5,7 @@ class TokimonsController < ApplicationController
 
   def show
     @tokimon = Tokimon.find(params[:id])
+    @trainer = @tokimon.trainer
     @total = @tokimon.fire + @tokimon.fight + @tokimon.fly + @tokimon.water + @tokimon.electric + @tokimon.frozon
   end
 
