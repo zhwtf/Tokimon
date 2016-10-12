@@ -39,6 +39,9 @@ class TrainersController < ApplicationController
   end
 
   def destroy
+    Trainer.find(params[:id]).destroy
+    flash[:success] = "Trainer deleted"
+    redirect_to trainers_url
   end
 
   private

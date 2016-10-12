@@ -3,7 +3,7 @@
 
 <h1>The list of Tokimons</h1>
 
-<table style="width:100%">
+<table style="width:80%">
 <thead>
 	<tr>
 		<th>Name</th>
@@ -15,6 +15,7 @@
 		<th>water</th>
 		<th>electric</th>
 		<th>frozon</th>
+
 		<th colspan="10"></th>
 	</tr>
 	</thead>
@@ -31,6 +32,8 @@
 		<td><%= tokimon.water %></td>
 		<td><%= tokimon.electric %></td>
 		<td><%= tokimon.frozon %></td>
+
+		<td><%= link_to "Delete", tokimon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 	</tr> 
 	<% end %>
 	</tbody>
