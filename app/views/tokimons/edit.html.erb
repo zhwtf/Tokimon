@@ -1,2 +1,51 @@
-<h1>Tokemons#edit</h1>
-<p>Find me in app/views/tokemons/edit.html.erb</p>
+<% provide(:title, 'Eidt Tokimon') %>
+<h1>Edit the Tokimon</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@tokimon) do |f| %>
+    	
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control' %>
+
+      <%= f.label :weight %>
+      <%= f.text_field :weight , class: 'form-control' %>
+
+      <%= f.label :height %>
+      <%= f.text_field :height , class: 'form-control' %>
+
+      <%= f.label :fly %>
+      <%= f.text_field :fly , class: 'form-control' %>
+
+      <%= f.label :fight %>
+      <%= f.text_field :fight , class: 'form-control' %>
+
+      <%= f.label :fire %>
+      <%= f.text_field :fire , class: 'form-control' %>
+
+      <%= f.label :water %>
+      <%= f.text_field :water , class: 'form-control' %>
+
+      <%= f.label :electric %>
+      <%= f.text_field :electric , class: 'form-control' %>
+
+      <%= f.label :frozon %>
+      <%= f.text_field :frozon , class: 'form-control' %>
+
+      <br>
+      <p>Change it's trainer</p>
+      
+      <select name="tokimon[trainer_id]">
+    <% Trainer.all.each do |trainer| %>
+        <option value="<%= trainer.id %>"><%= trainer.name %></option>
+    <% end %>
+</select>
+<br>
+<br>
+
+      
+
+      <%= f.submit "Finish editing", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

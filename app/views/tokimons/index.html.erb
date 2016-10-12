@@ -33,6 +33,7 @@
 		<td><%= tokimon.electric %></td>
 		<td><%= tokimon.frozon %></td>
 		<td><%= tokimon.fire + tokimon.fight + tokimon.fly + tokimon.water + tokimon.electric + tokimon.frozon %></td>
+		<td><%= link_to "Profile", tokimon %></td>
 		<td><%= link_to "Delete", tokimon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 	</tr> 
 	<% end %>
