@@ -15,7 +15,7 @@
 		<th>water</th>
 		<th>electric</th>
 		<th>frozon</th>
-
+		<th>Total</th>
 		<th colspan="10"></th>
 	</tr>
 	</thead>
@@ -32,7 +32,7 @@
 		<td><%= tokimon.water %></td>
 		<td><%= tokimon.electric %></td>
 		<td><%= tokimon.frozon %></td>
-
+		<td><%= tokimon.fire + tokimon.fight + tokimon.fly + tokimon.water + tokimon.electric + tokimon.frozon %></td>
 		<td><%= link_to "Delete", tokimon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 	</tr> 
 	<% end %>
