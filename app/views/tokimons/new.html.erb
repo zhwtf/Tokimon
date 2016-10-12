@@ -32,9 +32,15 @@
       <%= f.label :frozon %>
       <%= f.text_field :frozon , class: 'form-control' %>
 
-      <%= f.label :trainer_id %>
-      <%= f.text_field :trainer_id , class: 'form-control' %>
+      <br>
+      <p>Choose it's trainer</p>
       
+      <select name="tokimon[trainer_id]">
+    <% Trainer.all.each do |trainer| %>
+        <option value="<%= trainer.id %>"><%= trainer.name %></option>
+    <% end %>
+</select>
+<br>
 
       
 

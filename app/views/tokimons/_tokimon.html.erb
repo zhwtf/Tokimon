@@ -1,10 +1,38 @@
 
 
-<strong>Name: </strong>
-<p><%= @tokimon.name %></p>
-<br>
 
-<strong>Height: </strong>
-<p><%= @tokimon.height %></p>
-<br>
 
+<table style="width:100%">
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Height</th>
+		<th>Weight</th>
+		<th>Fly</th>
+		<th>Fight</th>
+		<th>Fire</th>
+		<th>water</th>
+		<th>electric</th>
+		<th>frozon</th>
+		<th colspan="10"></th>
+	</tr>
+	</thead>
+
+	<tbody>
+	<% @tokimons.each do |tokimon| %>
+	<tr>
+		<td><%= tokimon.name %></td>
+		<td><%= tokimon.height %></td>
+		<td><%= tokimon.weight %></td>
+		<td><%= tokimon.fly %></td>
+		<td><%= tokimon.fight %></td>
+		<td><%= tokimon.fire %></td>
+		<td><%= tokimon.water %></td>
+		<td><%= tokimon.electric %></td>
+		<td><%= tokimon.frozon %></td>
+		<td><%= link_to 'Edit', edit_tokimon_path(tokimon) %> </td>
+		<td><%= link_to 'Delete',tokimon_path(tokimon) %> </td>
+	</tr> 
+	<% end %>
+	</tbody>
+</table>

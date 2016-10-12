@@ -5,7 +5,7 @@ class TrainersController < ApplicationController
 
   def show
     @trainer = Trainer.find(params[:id])
-    @tokimon = @trainer.tokimons.second
+    @tokimons = @trainer.tokimons.all
   end
 
   def new
