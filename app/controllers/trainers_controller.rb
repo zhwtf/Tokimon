@@ -19,7 +19,7 @@ class TrainersController < ApplicationController
   def create
     @trainer = Trainer.new(trainer_params)
     if @trainer.save
-      flash[:info] = "Trainer created successful!"
+      flash[:info] = "Trainer created successfully!"
       redirect_to @trainer
     else
       render 'new'
@@ -33,7 +33,7 @@ class TrainersController < ApplicationController
   def update
     @trainer = Trainer.find(params[:id])
     if @trainer.update_attributes(trainer_params)
-      flash[:success] = "Profile updated"
+      flash[:success] = "Profile updated successfully!"
       redirect_to @trainer
     else
       render 'edit'
@@ -43,7 +43,7 @@ class TrainersController < ApplicationController
 
   def destroy
     Trainer.find(params[:id]).destroy
-    flash[:success] = "Trainer deleted"
+    flash[:success] = "Trainer deleted successfully!"
     redirect_to trainers_url
   end
 

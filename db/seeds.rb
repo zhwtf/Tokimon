@@ -28,6 +28,7 @@
                
 end
 
+
 trainers = Trainer.all
 2.times do
   

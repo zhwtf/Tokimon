@@ -1,6 +1,6 @@
 <% provide(:title, "Index") %>
 
-<h1>The list of trainers</h1>
+<h1>Welcome to the amazing Tokimon World</h1>
 
 <table style="width:100%">
 <thead>
@@ -42,6 +42,6 @@
 
 <br>
 <br>
-<h3>Bar chart(in the order of names)</h3>
+<h3>Bar chart for levels: </h3>
 <%= bar_chart Trainer.group(:name).sum(:level) %>
 
