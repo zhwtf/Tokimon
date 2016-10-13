@@ -40,4 +40,8 @@
 
 <%= link_to "create a new trainer!", new_trainer_path, class: "btn btn-lg btn-primary" %>
 
+<br>
+<br>
+<h3>Bar chart(in the order of names)</h3>
+<%= bar_chart Trainer.group(:name).sum(:level) %>
 

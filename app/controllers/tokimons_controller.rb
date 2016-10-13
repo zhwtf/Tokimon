@@ -15,6 +15,7 @@ class TokimonsController < ApplicationController
 
   def create
     @tokimon = Tokimon.new(tokimon_params)
+    @tokimon.total = @tokimon.fire + @tokimon.fight + @tokimon.fly + @tokimon.water + @tokimon.electric + @tokimon.frozon
     if @tokimon.save
       flash[:info] = "tokimon created successful!"
       redirect_to @tokimon

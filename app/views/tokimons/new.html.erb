@@ -33,11 +33,11 @@
       <%= f.text_field :frozon , class: 'form-control' %>
 
       <br>
-      <p>Choose it's trainer</p>
+      <p style="font-size:150%;">Choose its trainer</p>
       
-      <select name="tokimon[trainer_id]">
+      <select name="tokimon[trainer_id]" style="font-size:300%;">
     <% Trainer.all.each do |trainer| %>
-        <option value="<%= trainer.id %>"><%= trainer.name %></option>
+        <option value="<%= trainer.id %>" style="font-size:250%;"><%= trainer.name %></option>
     <% end %>
 </select>
 <br>
@@ -45,7 +45,7 @@
 
       
 
-      <%= f.submit "Create new Tokimon", class: "btn btn-primary" %>
+      <%= f.submit "Create a new Tokimon", class: "btn btn-primary" %>
     <% end %>
   </div>
 </div>

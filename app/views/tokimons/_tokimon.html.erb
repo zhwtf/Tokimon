@@ -11,9 +11,10 @@
 		<th>Fly</th>
 		<th>Fight</th>
 		<th>Fire</th>
-		<th>water</th>
-		<th>electric</th>
-		<th>frozon</th>
+		<th>Water</th>
+		<th>Electric</th>
+		<th>Frozon</th>
+		<th>Total</th>
 		<th></th>
 		<th></th>
 		<th></th>
@@ -32,6 +33,7 @@
 		<td><%= tokimon.water %></td>
 		<td><%= tokimon.electric %></td>
 		<td><%= tokimon.frozon %></td>
+		<td><%= tokimon.fly + tokimon.fight + tokimon.fire + tokimon.water + tokimon.electric + tokimon.frozon %></td>
 		<td><%= link_to 'Profile', tokimon %> </td>
 		<td><%= link_to 'Edit', edit_tokimon_path(tokimon) %> </td>
 		<td><%= link_to 'Delete',tokimon_path(tokimon) %> </td>
@@ -39,3 +41,7 @@
 	<% end %>
 	</tbody>
 </table>
+<br>
+<br>
+<h3>Bar chart(in the order of names)</h3>
+<%= bar_chart Tokimon.group(:name).sum(:total) %>

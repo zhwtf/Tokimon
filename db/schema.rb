@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20161011083457) do
     t.integer  "water"
     t.integer  "electric"
     t.integer  "frozon"
+    t.integer  "total"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "trainer_id"

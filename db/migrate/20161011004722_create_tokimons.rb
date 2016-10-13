@@ -11,7 +11,7 @@ class CreateTokimons < ActiveRecord::Migration[5.0]
       t.integer :water
       t.integer :electric
       t.integer :frozon
-
+      t.integer :total
       
 
       t.timestamps

@@ -46,3 +46,4 @@
 
 <%= link_to "create new tokimon!", new_tokimon_path, class: "btn btn-lg btn-primary" %>
 
+<%= bar_chart Tokimon.group(:name).sum(:total) %>
