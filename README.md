@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## The additional features of the app
+### 1.Attribute
+##### -All attributes have a validation to make sure that the user enters the correct input
 
-Things you may want to cover:
+### 2. Flash messages
+##### -A flash message will pop out when the action is completed successfully
 
-* Ruby version
+### 3. Bar chart
+##### -A bar chart is added to show the value's difference
 
-* System dependencies
+### 4. use Faker
+##### -Automatically generate 5 trainers with 2 tokimons for each trainer(total 10 tokimons).
+##### -The tokimons' name are all from Pokimon (also generated automatically)
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### 5 use Boostrap
+##### -Generate the header and navigation bar using Boostrap
