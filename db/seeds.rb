@@ -9,7 +9,7 @@
 #Trainer.create!(name:  "Frank", age: 20, height: 180, weight: 170, level: 0, address: "pandora dr",
              #email: "zhwtf999@gmail.com")
 
-5.times do |n|
+6.times do |n|
   name  = Faker::Name.first_name 
   email = "example-#{n+1}@gmail.com"
   age = Faker::Number.between(10, 50)
