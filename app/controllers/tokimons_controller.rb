@@ -20,6 +20,7 @@ class TokimonsController < ApplicationController
     
     if @tokimon.save
       @tokimon.total = @tokimon.fire + @tokimon.fight + @tokimon.fly + @tokimon.water + @tokimon.electric + @tokimon.frozon
+      @tokimon.save
       flash[:info] = "tokimon created successful!"
       redirect_to @trainer
     else
