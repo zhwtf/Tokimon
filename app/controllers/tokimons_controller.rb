@@ -17,8 +17,9 @@ class TokimonsController < ApplicationController
   def create
     @tokimon = Tokimon.new(tokimon_params)
     @trainer = Trainer.find(@tokimon.trainer_id)
-    @tokimon.total = @tokimon.fire + @tokimon.fight + @tokimon.fly + @tokimon.water + @tokimon.electric + @tokimon.frozon
+    
     if @tokimon.save
+      @tokimon.total = @tokimon.fire + @tokimon.fight + @tokimon.fly + @tokimon.water + @tokimon.electric + @tokimon.frozon
       flash[:info] = "tokimon created successful!"
       redirect_to @trainer
     else
