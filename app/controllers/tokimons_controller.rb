@@ -34,12 +34,13 @@ class TokimonsController < ApplicationController
 
   def update
      @tokimon = Tokimon.find(params[:id])
-     @trainer = Trainer.find(@tokimon.trainer_id)
+     
     if @tokimon.update_attributes(tokimon_params)
-       @tokimon.total = @tokimon.fire + @tokimon.fight + @tokimon.fly + @tokimon.water + @tokimon.electric + @tokimon.frozon
-       @tokimon.save
-      flash[:success] = "Profile updated successfully"
-      redirect_to @trainer
+         @trainer = Trainer.find(@tokimon.trainer_id)
+         @tokimon.total = @tokimon.fire + @tokimon.fight + @tokimon.fly + @tokimon.water + @tokimon.electric + @tokimon.frozon
+         @tokimon.save
+         flash[:success] = "Profile updated successfully"
+         redirect_to @trainer
     else
       render 'edit'
     end
