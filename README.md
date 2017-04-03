@@ -4,11 +4,11 @@
 ### A Tokimon is a lovely creature found in Korea like the famous game character Pokemon in Japan. Tokimons can have their own abilities such as fly, fight, throw fire, spray water, electrify, and freeze. In addition, these abilities are measured from 0 to 100. For each trainer, he/she can collect Tokimons and train them. This Webapp is to track the known Tokimons in existence and their owner(s).  
 
 ## Features of Tokimon Webapp
-### 1. The ability to add new Tokimon (Trainer) (with corresponding attributes). 
-### 2. The ability to change attributes of any of the Tokimons (Trainers). 
-### 3. The ability to delete any of the Tokimons (Trainers). 
-### 4. The ability to display information about a specific Tokimon (Trainer) including its Trainer (Tokimons in training). A link (Links) should be provided from the Tokimon (Trainer) info page that links to info about its Trainer (Tokimons). 
-### 5. The ability to display all Tokimons (Trainers) currently in the database (including any other information you collect). 
+#### 1. The ability to add new Tokimon (Trainer) (with corresponding attributes). 
+#### 2. The ability to change attributes of any of the Tokimons (Trainers). 
+#### 3. The ability to delete any of the Tokimons (Trainers). 
+#### 4. The ability to display information about a specific Tokimon (Trainer) including its Trainer (Tokimons in training). A link (Links) should be provided from the Tokimon (Trainer) info page that links to info about its Trainer (Tokimons). 
+#### 5. The ability to display all Tokimons (Trainers) currently in the database (including any other information you collect). 
 
 ## Additional Features of Tokimon Webapp
 ### 1.Attribute
