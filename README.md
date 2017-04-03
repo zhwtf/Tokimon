@@ -1,7 +1,7 @@
-# README
+### README
 
 ## Introduction of Tokimon Webapp
-### A Tokimon is a lovely creature found in Korea like the famous game character Pokemon in Japan. Tokimons can have their own abilities such as fly, fight, throw fire, spray water, electrify, and freeze. In addition, these abilities are measured from 0 to 100. For each trainer, he/she can collect Tokimons and train them. This Webapp is to track the known Tokimons in existence and their owner(s).  
+#### A Tokimon is a lovely creature found in Korea like the famous game character Pokemon in Japan. Tokimons can have their own abilities such as fly, fight, throw fire, spray water, electrify, and freeze. In addition, these abilities are measured from 0 to 100. For each trainer, he/she can collect Tokimons and train them. This Webapp is to track the known Tokimons in existence and their owner(s).  
 
 ## Features of Tokimon Webapp
 #### 1. The ability to add new Tokimon (Trainer) (with corresponding attributes). 
