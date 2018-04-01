@@ -1,7 +1,17 @@
-### README
+### Tokimon
 
 ## Introduction of Tokimon Webapp
-#### A Tokimon is a lovely creature found in Korea like the famous game character Pokemon in Japan. Tokimons can have their own abilities such as fly, fight, throw fire, spray water, electrify, and freeze. In addition, these abilities are measured from 0 to 100. For each trainer, he/she can collect Tokimons and train them. This Webapp is to track the known Tokimons in existence and their owner(s).  
+This is a webapp for trainers to train Tokimons and compete with others.
+
+### Background Story
+A Tokimon is a lovely creature found in Korea like the famous game character Pokemon in Japan. Tokimons can have their own abilities such as fly, fight, throw fire, spray water, electrify, and freeze. In addition, these abilities are measured from 0 to 100. For each trainer, he/she can collect Tokimons and train them. This Webapp is to track the known Tokimons in existence and their owner(s).  
+
+## For developers
+This web app was written in Ruby on Rails framework. To start, fork/clone the repo and run the follow command in your local machine:
+
+1.  `bundle install` - install bundle dependencies on local machine
+2. `rake db:create` - create new database on local machine
+3. `rails server` - run rails on local server
 
 ## Features of Tokimon Webapp
 #### 1. The ability to add new Tokimon (Trainer) (with corresponding attributes). 
